@@ -1,0 +1,23 @@
+
+/**
+ * @author zw
+ * @date 2019-8-26
+ * <p>
+ * Java中运行Groovy,有三种比较常用的类支持:GroovyShell,GroovyClassLoader以及Java-Script引擎(JSR-223).
+ * <p>
+ * 1) GroovyShell: 通常用来运行"script片段"或者一些零散的表达式(Expression)
+ * <p>
+ * 2) GroovyClassLoader: 如果脚本是一个完整的文件,特别是有API类型的时候,比如有类似于JAVA的接口,面向对象设计时,通常使用GroovyClassLoader.
+ * <p>
+ * 3) ScriptEngine: JSR-223应该是推荐的一种使用策略.规范化,而且简便.
+ */
+class TestGroovy {
+    static void main(String[] args) {
+        // Using a simple println statement to print output to the console
+        println('Hello World')
+    }
+
+    static String test(String id) {
+        return "test1 id:" + id
+    }
+}

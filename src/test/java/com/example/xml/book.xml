@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+    <book id="1">
+        <name>编程之美</name>
+        <price>34.0</price>
+        <author>《编程之美》小组</author>
+    </book>
+    <book id="2">
+        <name>平凡的世界</name>
+        <price>56.0</price>
+        <author>路遥</author>
+    </book>
+</books>
