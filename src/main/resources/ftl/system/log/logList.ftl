@@ -1,6 +1,6 @@
 <#-- Created by IntelliJ IDEA.
  User: zxm
- Date: 2017/12/19
+ DateTest: 2017/12/19
  Time: 18:00
  To change this template use File | Settings | File Templates.
  角色管理-->
@@ -57,7 +57,7 @@
 </script>
 <script>
   layui.laytpl.toDateString = function(d, format){
-    var date = new Date(d || new Date())
+    var date = new DateTest(d || new DateTest())
         ,ymd = [
       this.digit(date.getFullYear(), 4)
       ,this.digit(date.getMonth() + 1)
