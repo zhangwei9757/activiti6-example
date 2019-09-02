@@ -47,7 +47,33 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+<!--https://blog.csdn.net/qq_28483283/article/details/80623417-->
+        <!-- spring Data JPA -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
 
+        <!--quartz依赖-->
+        <!-- spring整合 https://www.cnblogs.com/ealenxie/p/9134602.html -->
+        <!-- springboot整合 https://www.jianshu.com/p/056281e057b3 -->
+        <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
+            <version>2.2.1</version>
+        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.quartz-scheduler</groupId>-->
+            <!--<artifactId>quartz-jobs</artifactId>-->
+            <!--<version>2.2.3</version>-->
+        <!--</dependency>-->
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+        </dependency>
+
+        <!-- groovy -->
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
             <artifactId>groovy-all</artifactId>
@@ -258,25 +284,25 @@
             </plugin>
 
             <!-- groovy -->
-            <plugin>
-                <groupId>org.codehaus.gmavenplus</groupId>
-                <artifactId>gmavenplus-plugin</artifactId>
-                <version>1.5</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>addSources</goal>
-                            <goal>addTestSources</goal>
-                            <goal>generateStubs</goal>
-                            <goal>compile</goal>
-                            <goal>testGenerateStubs</goal>
-                            <goal>testCompile</goal>
-                            <goal>removeStubs</goal>
-                            <goal>removeTestStubs</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+            <!--<plugin>-->
+            <!--<groupId>org.codehaus.gmavenplus</groupId>-->
+            <!--<artifactId>gmavenplus-plugin</artifactId>-->
+            <!--<version>1.5</version>-->
+            <!--<executions>-->
+            <!--<execution>-->
+            <!--<goals>-->
+            <!--<goal>addSources</goal>-->
+            <!--<goal>addTestSources</goal>-->
+            <!--<goal>generateStubs</goal>-->
+            <!--<goal>compile</goal>-->
+            <!--<goal>testGenerateStubs</goal>-->
+            <!--<goal>testCompile</goal>-->
+            <!--<goal>removeStubs</goal>-->
+            <!--<goal>removeTestStubs</goal>-->
+            <!--</goals>-->
+            <!--</execution>-->
+            <!--</executions>-->
+            <!--</plugin>-->
         </plugins>
     </build>
 

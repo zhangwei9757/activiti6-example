@@ -1,3 +1,5 @@
+quartz:
+  enabled: true
 server:
   port: 8888
 #基于SpringBoot 2.x版本，如果使用oracle驱动的话，请使用oracle 11+版本，oracle 10版本会出现兼容性问题
@@ -92,3 +94,11 @@ spring:
     template-loader-path: classpath:/ftl/
     settings:
       number_format: "0.##"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: mysql
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
